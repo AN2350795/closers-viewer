@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/closers-viewer/static/css/main.ac992218.css",
-    "main.js": "/closers-viewer/static/js/main.12ef8c5e.js",
+    "main.js": "/closers-viewer/static/js/main.eca1ae5f.js",
     "static/js/453.f8101352.chunk.js": "/closers-viewer/static/js/453.f8101352.chunk.js",
     "static/media/slick.svg": "/closers-viewer/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/closers-viewer/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/closers-viewer/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/closers-viewer/index.html",
     "main.ac992218.css.map": "/closers-viewer/static/css/main.ac992218.css.map",
-    "main.12ef8c5e.js.map": "/closers-viewer/static/js/main.12ef8c5e.js.map",
+    "main.eca1ae5f.js.map": "/closers-viewer/static/js/main.eca1ae5f.js.map",
     "453.f8101352.chunk.js.map": "/closers-viewer/static/js/453.f8101352.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac992218.css",
-    "static/js/main.12ef8c5e.js"
+    "static/js/main.eca1ae5f.js"
   ]
 }
