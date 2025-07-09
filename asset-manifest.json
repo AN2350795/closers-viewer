@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/closers-viewer/static/css/main.c60ef978.css",
+    "main.css": "/closers-viewer/static/css/main.b9200e3c.css",
     "main.js": "/closers-viewer/static/js/main.d072c276.js",
     "static/js/453.f8101352.chunk.js": "/closers-viewer/static/js/453.f8101352.chunk.js",
     "static/media/slick.svg": "/closers-viewer/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -8,12 +8,12 @@
     "static/media/slick.ttf": "/closers-viewer/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/closers-viewer/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/closers-viewer/index.html",
-    "main.c60ef978.css.map": "/closers-viewer/static/css/main.c60ef978.css.map",
+    "main.b9200e3c.css.map": "/closers-viewer/static/css/main.b9200e3c.css.map",
     "main.d072c276.js.map": "/closers-viewer/static/js/main.d072c276.js.map",
     "453.f8101352.chunk.js.map": "/closers-viewer/static/js/453.f8101352.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c60ef978.css",
+    "static/css/main.b9200e3c.css",
     "static/js/main.d072c276.js"
   ]
 }
