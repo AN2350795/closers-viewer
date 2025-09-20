@@ -1,61 +1,41 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="/closers-viewer/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/closers-viewer/logo192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/closers-viewer/logo512.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="클로저스(Closers) 캐릭터, 일러스트, 배경화면 등 다양한 공식 컨텐츠를 모아볼 수 있는 팬사이트입니다."
-    />
-    <meta name="keywords" content="클로저스, 팬사이트, 클로저스 팬사이트, 클로저스 뷰어, 캐릭터, 일러스트, 배경화면, Closers, Fansite, Viewer, Closers Viewer, Character, Illustration, Wallpaper" />
+      <meta charset="utf-8">
+      <title>Single Page Apps for GitHub Pages</title>
+      <script type="text/javascript">
+          // Single Page Apps for GitHub Pages
+          // https://github.com/rafrex/spa-github-pages
+          // Copyright (c) 2016 Rafael Pedicini,  licensed under the MIT License
+          //  ---------------------------------------------- ------------------------
+          // This script takes the current url and  converts the path and query
+          // string into just a query string, and then  redirects the browser
+          // to the new url with only a query string  and hash fragment,
+          // e.g. http://www.foo.tld/one/two?a=b& c=d#qwe, becomes
+          // http://www.foo.tld/?p=/one/two&  q=a=b~and~c=d#qwe
+          // Note: this 404.html file must be at least  512 bytes for it to work
+          // with Internet Explorer (it is currently >  512 bytes)
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://an2350795.github.io/closers-viewer/" />
-    <meta property="og:title" content="클로저스 뷰어 - Closers Viewer" />
-    <meta property="og:description" content="클로저스(Closers) 캐릭터, 일러스트, 배경화면 등 다양한 공식 컨텐츠를 모아볼 수 있는 팬사이트입니다." />
-    <meta property="og:image" content="/closers-viewer/img/LOGO_CLOSERS.png" />
+          // If you're creating a Project Pages site  and NOT using a custom domain,
+          // then set segmentCount to 1 (enterprise   users may need to set it to > 1).
+          // This way the code will only replace the  route part of the path, and not
+          // the real directory in which the app  resides, for example:
+          //  https://username.github.io/repo-name/one/two?  a=b&c=d#qwe becomes
+          // https://username.github.io/repo-name/? p=/one/two&q=a=b~and~c=d#qwe
+          // Otherwise, leave segmentCount as 0.
+          var segmentCount = 1;
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://an2350795.github.io/closers-viewer/" />
-    <meta property="twitter:title" content="클로저스 뷰어 - Closers Viewer" />
-    <meta property="twitter:description" content="클로저스(Closers) 캐릭터, 일러스트, 배경화면 등 다양한 공식 컨텐츠를 모아볼 수 있는 팬사이트입니다." />
-    <meta property="twitter:image" content="/img/LOGO_CLOSERS.png" />
-    
-    <link rel="apple-touch-icon" href="/closers-viewer/logo192.png" />
-    <link rel="manifest" href="/closers-viewer/manifest.json" />
-    
-    <!-- Start Single Page Apps for GitHub Pages -->
-    <script type="text/javascript">
-      (function (l) {
-        if (l.search) {
-          var q = {};
-          l.search.slice(1).split('&').forEach(function (v) {
-            var a = v.split('=');
-            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-          });
-          if (q.p !== undefined) {
-            window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + (q.p || '') +
-              (q.q ? ('?' + q.q) : '') +
+          var l = window.location;
+          l.replace(
+              l.protocol + '//' + l.hostname + (l.port ?   ':' + l.port : '') +
+              l.pathname.split('/').slice(0, 1 +  segmentCount).join('/') + '/?p=/' +
+              l.pathname.slice(1).split('/').slice  (segmentCount).join('/').replace(/&/g,  '~and~') +
+              (l.search ? '&q=' + l.search.slice(1) .replace(/&/g, '~and~') : '') +
               l.hash
-            );
-          }
-        }
-      }(window.location))
-    </script>
-    <!-- End Single Page Apps for GitHub Pages -->
-    <title>클로저스 뷰어 - Closers Viewer</title>
-    <script type="module" crossorigin src="/closers-viewer/assets/index-DEZpZzcZ.js"></script>
-    <link rel="stylesheet" crossorigin href="/closers-viewer/assets/index-CQMIeaUv.css">
+          );
+
+      </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
   </body>
 </html>
