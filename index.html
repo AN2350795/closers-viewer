@@ -38,9 +38,8 @@
         if (redirect) {
           sessionStorage.removeItem('redirect');
           const newPath = redirect.replace(/\/closers-viewer/, ''); // Remove base path
-          const cleanedPath = (newPath.length > 1 && newPath.endsWith('/')) ? newPath.slice(0, -1) : newPath;
-          if (cleanedPath && cleanedPath !== '/') {
-            history.replaceState(null, null, '/closers-viewer' + cleanedPath);
+          if (newPath && newPath !== '/') {
+            history.replaceState(null, null, '/closers-viewer' + newPath);
           }
         }
       }(window.location))

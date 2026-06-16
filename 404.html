@@ -6,7 +6,7 @@
       <script type="text/javascript">
         // 현재 경로를 sessionStorage에 저장하고 루트로 리디렉션합니다.
         const path = window.location.pathname;
-        sessionStorage.setItem('redirect', path);
+        sessionStorage.redirect = path;
         window.location.href = '/closers-viewer/'; // vite.config.ts의 base 경로와 일치해야 합니다.
       </script>
   </head>
