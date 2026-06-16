@@ -5,7 +5,10 @@
       <title>클로저스 뷰어 - 404 Not Found</title>
       <script type="text/javascript">
         // 현재 경로를 sessionStorage에 저장하고 루트로 리디렉션합니다.
-        const path = window.location.pathname;
+        let path = window.location.pathname;
+        if (path.length > 1 && path.endsWith('/')) {
+          path = path.slice(0, -1);
+        }
         sessionStorage.redirect = path;
         window.location.href = '/closers-viewer/'; // vite.config.ts의 base 경로와 일치해야 합니다.
       </script>
