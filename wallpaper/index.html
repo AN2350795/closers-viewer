@@ -37,6 +37,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet" />
 
+  <!-- GitHub Pages SPA: 404.html에서 저장한 경로를 복원합니다 -->
+  <script>
+    (function () {
+      var redirect = sessionStorage.getItem('spa_redirect');
+      if (redirect) {
+        sessionStorage.removeItem('spa_redirect');
+        // trailing slash 제거 후 history 교체 (React Router 마운트 전)
+        var cleaned = redirect.replace(/\/(\?|#|$)/, '$1');
+        window.history.replaceState(null, '', cleaned);
+      }
+    })();
+  </script>
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJMH4ZHZR9"></script>
   <script>
