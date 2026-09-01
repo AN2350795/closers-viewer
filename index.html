@@ -44,7 +44,7 @@
       if (redirect) {
         sessionStorage.removeItem('spa_redirect');
         // trailing slash 제거 후 history 교체 (React Router 마운트 전)
-        var cleaned = redirect.replace(/\/(\?|#|$)/, '$1');
+        var cleaned = redirect.replace(/\/([?#]|$)/, '$1');
         window.history.replaceState(null, '', cleaned);
       }
     })();
@@ -60,7 +60,7 @@
   </script>
 
   <title>클로저스 뷰어 - Closers Viewer</title>
-  <script type="module" crossorigin src="/assets/index-C5Ulb5Zw.js"></script>
+  <script type="module" crossorigin src="/assets/index-DDoqtm3w.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/vendor-react-CuAbqsjm.js">
   <link rel="modulepreload" crossorigin href="/assets/vendor-state-DqYI-mIw.js">
   <link rel="stylesheet" crossorigin href="/assets/index-BUL5Wcu6.css">

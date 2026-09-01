@@ -3,42 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>페이지를 찾을 수 없습니다 - 클로저스 뷰어</title>
+    <title>클로저스 뷰어 - Closers Viewer</title>
     <meta name="robots" content="noindex" />
-    <style>
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      body {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: #0a0a0f;
-        color: #e0e0e0;
-        font-family: 'Segoe UI', sans-serif;
-        gap: 1.5rem;
-        text-align: center;
-        padding: 2rem;
-      }
-      h1 { font-size: 5rem; font-weight: 700; color: #5b8af0; letter-spacing: -2px; }
-      p { font-size: 1.1rem; color: #999; }
-      a {
-        display: inline-block;
-        margin-top: 0.5rem;
-        padding: 0.6rem 1.6rem;
-        background: #5b8af0;
-        color: #fff;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: background 0.2s;
-      }
-      a:hover { background: #4070d8; }
-    </style>
+    <script>
+      // GitHub Pages SPA 리다이렉트 트릭
+      (function () {
+        var location = window.location;
+        var base = '/';
+        // 이미 base 루트라면 무한루프 방지
+        var pathname = location.pathname;
+        var isRoot = pathname === base || pathname === base.replace(/\/$/, '');
+        if (isRoot) return;
+        // trailing slash를 제거한 경로를 저장
+        var redirect = pathname.replace(/\/([?#]|$)/, '$1') + location.search + location.hash;
+        sessionStorage.setItem('spa_redirect', redirect);
+        location.replace(base);
+      })();
+    </script>
   </head>
   <body>
-    <h1>404</h1>
-    <p>요청하신 페이지를 찾을 수 없습니다.</p>
-    <a href="/">홈으로 돌아가기</a>
   </body>
 </html>
